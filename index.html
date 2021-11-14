@@ -1,0 +1,107 @@
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Kalkulator</title>
+    <link rel="stylesheet" href="stylesheet.css" type="text/css">
+   
+  </head>
+  <body>
+    <div id="main">      
+      <h1>Tugas Individu</h1>  
+      <p>Ayub hanafi mangunsong</p>
+      <form>        
+        <input type="text" id="viewer" value="0" disabled />
+        <table>
+            <tr>
+              <td>
+                <input type="button" value="C" class="btn" onclick="clean()" />
+              </td>
+              <td>
+                <input 
+                  type="button"
+                  value="DEL"
+                  class="btn"
+                  onclick="backspace()"  />
+              </td>
+              <td>
+                <input type="button" value="/" class="btn" onclick="view('/')" />
+              </td>
+              <td>
+                <input style="background-color: orange;" type="button" value="X" class="btn" onclick="view('*')" />
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <input type="button" value="7" class="btn" onclick="view(7)" />
+              </td>
+              <td>
+                <input type="button" value="8" class="btn" onclick="view(8)" />
+              </td>
+              <td>
+                <input type="button" value="9" class="btn" onclick="view(9)" />
+              </td>
+              <td>
+                <input style="background-color: orange;" type="button" value="-" class="btn" onclick="view('-')" />
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <input type="button" value="4" class="btn" onclick="view(4)" />
+              </td>
+              <td>
+                <input type="button" value="5" class="btn" onclick="view(5)" />
+              </td>
+              <td>
+                <input type="button" value="6" class="btn" onclick="view(6)" />
+              </td>
+              <td>
+                <input style="background-color: orange;" type="button" value="+" class="btn" onclick="view('+')" />
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <input type="button" value="1" class="btn" onclick="view(1)" />
+              </td>
+              <td>
+                <input type="button" value="2" class="btn" onclick="view(2)" />
+              </td>
+              <td>
+                <input type="button" value="3" class="btn" onclick="view(3)" />
+              </td>
+              <td rowspan="2" style="background-color: orange;">
+                <input  style="background-color: orange;"
+                  type="button"
+                  value="="
+                  class="btn"
+                  onclick="equal()"/>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <input type="button" value="0" class="btn" onclick="view('0')" />
+              </td>
+              <td>
+                <input
+                  type="button"
+                  value="%"
+                  class="btn"
+                  onclick="view('000')"
+                />
+              </td>
+              <td>
+                <input type="button" value="." class="btn" onclick="view('.')" />
+              </td>
+            </tr>
+        </table>
+      </form>         
+    </div>    
+    <div id="main" ==0>
+         <div class="footer">
+      <h3>Mohon maaf jika ada yang salah, saya masih awam dalam koding kak</h3>
+    </div>  
+    </div>   
+   <script type="text/javascript" src="script.js"></script>
+  </body>
+</html>
